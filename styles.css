@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FAF7F0;
+    font-family: "Libre Baskerville";
+    font-weight: 700;
+}
+
+.js-text {
+    font-size: large;
+}
+
+.header-text {
+    margin-left: 10px;
+}
+
+.gameContainer {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+}
+
+.box {
+    border: solid black 1px;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameInfo {
+    padding-left: 34px;
+    margin-right: 50px;
+}
+
+.bt-0 {
+    border-top: 0px;
+}
+
+.bb-0 {
+    border-bottom: 0px;
+}
+
+.br-0 {
+    border-right: 0px;
+}
+
+.bl-0 {
+    border-left: 0px;
+}
+
+.result-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: none;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    text-align: center; /* Ensure text is centered */
+  }
+  
+  .result-page h1 {
+    font-size: 3rem;
+    margin-bottom: 20px; /* Add some space before resets */
+  }
+  
+.reset {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 50px;
+  }
+  
+.reset span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.reset span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+.reset:hover span {
+    padding-right: 25px;
+  }
+  
+.reset:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
